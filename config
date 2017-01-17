@@ -1,7 +1,20 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/x86 4.9.0-gentoo Kernel Configuration
+# Linux/x86 4.9.3-gentoo Kernel Configuration
 #
+
+#
+# Gentoo Linux
+#
+CONFIG_GENTOO_LINUX=y
+CONFIG_GENTOO_LINUX_UDEV=y
+CONFIG_GENTOO_LINUX_PORTAGE=y
+
+#
+# Support for init systems, system and service managers
+#
+# CONFIG_GENTOO_LINUX_INIT_SCRIPT is not set
+CONFIG_GENTOO_LINUX_INIT_SYSTEMD=y
 CONFIG_64BIT=y
 CONFIG_X86_64=y
 CONFIG_X86=y
@@ -169,7 +182,7 @@ CONFIG_CGROUP_DEVICE=y
 CONFIG_CGROUP_CPUACCT=y
 CONFIG_CGROUP_PERF=y
 # CONFIG_CGROUP_DEBUG is not set
-# CONFIG_CHECKPOINT_RESTORE is not set
+CONFIG_CHECKPOINT_RESTORE=y
 CONFIG_NAMESPACES=y
 CONFIG_UTS_NS=y
 CONFIG_IPC_NS=y
@@ -527,6 +540,7 @@ CONFIG_HWPOISON_INJECT=m
 # CONFIG_CLEANCACHE is not set
 # CONFIG_FRONTSWAP is not set
 # CONFIG_CMA is not set
+# CONFIG_MEM_SOFT_DIRTY is not set
 # CONFIG_ZPOOL is not set
 # CONFIG_ZBUD is not set
 # CONFIG_ZSMALLOC is not set
@@ -5471,16 +5485,3 @@ CONFIG_ARCH_HAS_SG_CHAIN=y
 CONFIG_ARCH_HAS_PMEM_API=y
 CONFIG_ARCH_HAS_MMIO_FLUSH=y
 CONFIG_SBITMAP=y
-
-#
-# Gentoo Linux
-#
-CONFIG_GENTOO_LINUX=y
-CONFIG_GENTOO_LINUX_UDEV=y
-CONFIG_GENTOO_LINUX_PORTAGE=y
-
-#
-# Support for init systems, system and service managers
-#
-# CONFIG_GENTOO_LINUX_INIT_SCRIPT is not set
-CONFIG_GENTOO_LINUX_INIT_SYSTEMD=y
